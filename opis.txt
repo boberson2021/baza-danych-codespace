@@ -1,0 +1,5 @@
+włącznie: docker compose up -d
+
+wyłączenie: docker compose down
+
+W zapisie „zewnętrzny:wewnętrzny” pierwszy numer to port na Twoim komputerze, a drugi w kontenerze (web to 8080:80, phpmyadmin to 8081:80, a db to 3306:3306). Różnią się głównie dlatego, że zarówno web, jak i phpmyadmin w środku używają portu 80, więc na komputerze trzeba im dać różne wolne porty, żeby nie było konfliktu.
